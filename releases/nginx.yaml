@@ -15,13 +15,13 @@ spec:
   chart:
     repository: https://charts.bitnami.com/bitnami/
     name: nginx
-    version: 13.1.0
+    version: 11.1.5
   values:
     usePassword: true
     image:
-      registry: docker.io
+      registry: public.ecr.aws
       repository: bitnami/nginx
-      tag: 1.23.0-debian-11-r3
+      tag: 1.21.6
     service:
       type: LoadBalancer
       port: 80
